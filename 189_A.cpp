@@ -4,14 +4,15 @@ using namespace std;
 typedef long long ll;
 
 int main(){
-   int n;
-   cin >> n;
-   int a ,b;
-   cin >> a >> b;
+   string s;
+   cin >> s;
 
-   string ans = "No";
-   for(int i = 0; i < n; i++){
-      
+   string ans = "Lost";
+
+   if(s[0] == s[1]) {
+      if(s[0 ]==s[2]) {
+         ans = "Won";
+      }
    }
 
    cout << ans << endl;
