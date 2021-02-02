@@ -19,9 +19,8 @@ int main(){
 
    double drink = 0;
    for(int i = 0; i < n; i++){
-      drink += V.at(i)*P.at(i)*0.01;
-      cout << drink << endl;
-      if(drink >= xml) {
+      drink += V.at(i)*P.at(i);
+      if(drink > xml* 100) {
          ans = i+1;
          break;
       }
