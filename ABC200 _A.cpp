@@ -5,13 +5,9 @@ typedef long long ll;
 int main(){
    int n;
    cin >> n;
-   int a ,b;
-   cin >> a >> b;
 
-   string ans = "No";
-   for(int i = 0; i < n; i++){
-      
-   }
+   int ans = n/100;
+   if(n%100 != 0) ans++;
 
    cout << ans << endl;
 
